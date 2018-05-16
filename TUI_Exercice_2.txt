@@ -1,0 +1,15 @@
+// To optimise the code i suggest to use this C# 7 functionnality : Pattern Matching
+
+            switch (message)
+            {
+                case MessageA messageA:
+                    messageA?.MyCustomMethodOnA();
+                    break;
+                case MessageB messageB:
+                    messageB?.MyCustomMethodOnB();
+                    messageB?.SomeCustomMethodOnB();
+                    break;
+                case MessageC messageC:
+                    messageC?.MyCustomMethodOnC();
+                    break;
+            }
